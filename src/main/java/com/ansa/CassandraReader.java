@@ -3,7 +3,6 @@ package com.ansa;
 import com.datastax.driver.core.Cluster;
 import org.apache.flink.api.common.io.InputFormat;
 import org.apache.flink.api.java.typeutils.GenericTypeInfo;
-import org.apache.flink.batch.connectors.cassandra.CassandraInputFormat;
 import org.apache.flink.batch.connectors.cassandra.CassandraPojoInputFormat;
 import org.apache.flink.streaming.api.scala.DataStream;
 import org.apache.flink.streaming.api.scala.StreamExecutionEnvironment;

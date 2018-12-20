@@ -7,6 +7,7 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.connectors.cassandra.CassandraSink;
 import org.apache.flink.streaming.connectors.cassandra.ClusterBuilder;
 
+import java.time.LocalTime;
 import java.util.ArrayList;
 
 public class FlinkPojoRunner {
@@ -14,7 +15,7 @@ public class FlinkPojoRunner {
 
     static {
         for (long i = 0; i < 20; i++) {
-            messages.add(new Message("cassandra-" + i));
+            messages.add(new Message("cassandra-" + i, LocalTime.now().toString()));
         }
     }
 

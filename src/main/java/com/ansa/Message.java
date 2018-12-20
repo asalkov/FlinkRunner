@@ -12,12 +12,16 @@ public class Message implements Serializable{
     @Column(name = "body")
     private String message;
 
+    @Column(name = "value")
+    private String value;
+
     public Message(){
 
     }
 
-    public Message(String word) {
+    public Message(String word, String value) {
         this.message = word;
+        this.value = value;
     }
 
     public String getMessage() {
@@ -34,6 +38,14 @@ public class Message implements Serializable{
             return this.message.equals(that.message);
         }
         return false;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
     }
 
     @Override
