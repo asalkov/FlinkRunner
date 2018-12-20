@@ -1,0 +1,49 @@
+group 'com.ansa'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // https://mvnrepository.com/artifact/org.apache.flink/flink-core
+    compile group: 'org.apache.flink', name: 'flink-core', version: '1.7.0'
+
+    // https://mvnrepository.com/artifact/org.apache.flink/flink-streaming-java
+    compile group: 'org.apache.flink', name: 'flink-streaming-java_2.12', version: '1.7.0'
+
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    // https://mvnrepository.com/artifact/com.datastax.cassandra/cassandra-driver-core
+    compile group: 'com.datastax.cassandra', name: 'cassandra-driver-core', version: '3.6.0'
+
+    // https://mvnrepository.com/artifact/com.datastax.cassandra/cassandra-driver-mapping
+    compile group: 'com.datastax.cassandra', name: 'cassandra-driver-mapping', version: '3.6.0'
+
+
+    // https://mvnrepository.com/artifact/org.apache.flink/flink-scala
+    compile group: 'org.apache.flink', name: 'flink-scala_2.12', version: '1.7.0'
+
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.25'
+
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+
+
+
+    // https://mvnrepository.com/artifact/org.apache.flink/flink-connector-cassandra
+    compile group: 'org.apache.flink', name: 'flink-connector-cassandra_2.12', version: '1.7.0'
+
+    // https://mvnrepository.com/artifact/org.apache.flink/flink-streaming-scala
+    compile group: 'org.apache.flink', name: 'flink-streaming-scala_2.12', version: '1.7.0'
+
+
+
+}
